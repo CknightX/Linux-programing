@@ -77,7 +77,7 @@ int see_more(FILE *cmd,FILE *fp)
 		printf("\033[7m --More--\033[m");
 	}
 	else
-		printf("\033[7m --More--%.2f\% \033[m",((float)current_size/file_size)*100);
+		printf("\033[7m --More--%.2f%% \033[m",((float)current_size/file_size)*100);
 	while((c=getc(cmd))!=EOF)
 	{
 		printf("\033[20D");
